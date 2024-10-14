@@ -8,6 +8,7 @@ services:
     ports:
       - 22181:2181
 
+
   zookeeper-2:
     image: confluentinc/cp-zookeeper:latest
     environment:
@@ -16,11 +17,13 @@ services:
     ports:
       - 32181:2181
 
+
   kafka-1:
     image: confluentinc/cp-kafka:latest
     depends_on:
       - zookeeper-1
       - zookeeper-2
+
 
     ports:
       - 29092:29092
