@@ -4,40 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72137a0d-5b5c-4560-bef0-5c5c65c78f83" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apache_kafka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="72137a0d-5b5c-4560-bef0-5c5c65c78f83" name="Changes" comment="Реализован consumer и producer. Kafka развернул через docker-compose">
       <change afterPath="$PROJECT_DIR$/kafka_consumer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka_consumer/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka_consumer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/main/java/com/example/kafka_consumer/KafkaConsumerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/main/java/com/example/kafka_consumer/consumer_configuration/ConsumerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/main/java/com/example/kafka_consumer/consumer_configuration/MyTopicConsumerListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/main/java/com/example/kafka_consumer/controller/ConsumerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_consumer/src/test/java/com/example/kafka_consumer/KafkaConsumerApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka_producer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka_producer/mvnw" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/kafka_producer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/KafkaProducerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/controller/ProducerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/producer_configuration/ProducerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka_producer/src/test/java/com/example/kafka_producer/KafkaProducerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_producer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_producer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/KafkaProducerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/KafkaProducerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/controller/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/controller/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/producer_configuration/ProducerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_producer/src/main/java/com/example/kafka_producer/producer_configuration/ProducerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka_producer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kafka_producer/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +32,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafka_consumer" />
+    <option name="RECENT_COMMON_BRANCH" value="master" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafka_producer" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -154,10 +136,24 @@
       <workItem from="1710085164781" duration="105000" />
       <workItem from="1710570371373" duration="3830000" />
       <workItem from="1728745585188" duration="6106000" />
+      <workItem from="1728937524145" duration="1144000" />
     </task>
+    <task id="LOCAL-00001" summary="Реализован consumer и producer. Kafka развернул через docker-compose">
+      <option name="closed" value="true" />
+      <created>1728937903475</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728937903475</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Реализован consumer и producer. Kafka развернул через docker-compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="Реализован consumer и producer. Kafka развернул через docker-compose" />
   </component>
 </project>
